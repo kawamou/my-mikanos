@@ -2,13 +2,14 @@
 ## my-mikanosとは
 - 後で書く
 ## セットアップ
-- 手順は(こちらの通り)[https://zenn.dev/karaage0703/articles/1bdb8930182c6c]に実施
-- Mac用の(.devcontainer)[https://github.com/sarisia/mikanos-devcontainer]をclone
+- 手順は[こちらの通り](https://zenn.dev/karaage0703/articles/1bdb8930182c6c)に実施
+- Mac用の[.devcontainer](https://github.com/sarisia/mikanos-devcontainer)をclone
+    - ちなみに[大元のDockerfile](https://github.com/sarisia/mikanos-docker)をこの階層に入れるのでもOK
 - XQuartzをインストール`brew install xquartz`
     - XQuartzは画面表示のために必要
     - ゲスト環境であるDockerがXプロトコルで画面描画を求めてくるからキャッチして表示するためのXサーバーという認識
     - QEMUがXクライアントみたいになってるはず（...はず）
-    - 以下、（引用)[https://blog.goo.ne.jp/nhh0/e/a070a9b0edde6a52c1ace2b351ced261]だが分かりやすい
+    - 以下、[引用](https://blog.goo.ne.jp/nhh0/e/a070a9b0edde6a52c1ace2b351ced261)だが分かりやすい
 ```foo.md
 X Window Systemでは、クライアントサーバー方式でGUIが実現されていて、
 1. 画面を描画するソフトウェア（Xサーバ。画面に絵を描く以外に、キーボードやマウスなどの入力デバイスの面倒も見る）
